@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №1 - Варіант 3</title>
+</head>
+<body style="background-color: #FFFFFF; color: #000000; margin: 0; padding: 10px;">
 
+    <header style="text-align: center;">
+        <h1 style="color: #003366; margin-bottom: 5px;">Лабораторна робота №1</h1>
+        <p style="font-size: 1.2em; margin-top: 0;">Основи побудови та публікації HTML-документів (Варіант 3)</p>
+        <hr>
+    </header>
+
+    <nav style="text-align: center;">
+        <p style="font-weight: bold;">
+            <a href="#task1" style="color: #336699; text-decoration: none; margin: 0 10px;">1. Текст</a> |
+            <a href="#task2" style="color: #336699; text-decoration: none; margin: 0 10px;">2. Список</a> |
+            <a href="#task3" style="color: #336699; text-decoration: none; margin: 0 10px;">3. Таблиця</a> |
+            <a href="#task4" style="color: #336699; text-decoration: none; margin: 0 10px;">4. Форма</a> |
+            <a href="#task5" style="color: #336699; text-decoration: none; margin: 0 10px;">5. Медіа</a>
+        </p>
+        <hr>
+    </nav>
+
+    <main style="max-width: 900px; margin: 0 auto;">
+        <section id="task1">
+            <h2 style="color: #003366;">Завдання 1: Оформлений текст</h2>
+            <p style="font-size: 1.2em;">
+                <i><b>E</b></i>=<i><b>mc</b></i><sup>2</sup>, where <b>E</b> &minus; energy of the object, 
+                <b>m</b> &minus; it&#39;s mass, <b>c</b> &minus; speed of light in vacuum, 
+                equals to 299&nbsp;792&nbsp;458 <i>m/s</i>.
+            </p>
+            <hr>
+        </section>
+
+        <section id="task2">
+            <h2 style="color: #666600;">Завдання 2: Випадаючий список</h2>
+            <p style="font-size: 1.1em;">Оберіть студента (Бригада 1):</p>
+            <form action="#" method="GET">
+                <select name="studentlist" style="padding: 5px; font-size: 1em;">
+                    <option value="none">-- Оберіть зі списку --</option>
+                    <option value="1">Петро Лучанінов</option>
+                    <option value="2">Арсеній Лучанінов</option>
+                    <option value="3">Владислав Бондарєв</option>
+                </select>
+            </form>
+            <hr>
+        </section>
+
+        <section id="task3">
+            <h2 style="color: #006600;">Завдання 3: Табличне подання даних</h2>
+            <table border="1" align="center" style="width: 60%; border-collapse: collapse; text-align: left;">
+                <caption style="font-weight: bold; font-size: 1.2em; margin-bottom: 10px;">Зміст книги "Книга HTML and CSS: Design and Build Websites"</caption>
+                <tr style="background-color: #CCFFCC;">
+                    <th style="padding: 10px;">Назва розділу</th>
+                    <th style="padding: 10px; text-align: center;">Сторінка</th>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Вступ (Introduction)</td>
+                    <td style="padding: 10px; text-align: center;">5</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Розділ 1: Структура (Structure)</td>
+                    <td style="padding: 10px; text-align: center;">10</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Розділ 2: Текст (Text)</td>
+                    <td style="padding: 10px; text-align: center;">25</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;">Розділ 3: Списки (Lists)</td>
+                    <td style="padding: 10px; text-align: center;">48</td>
+                </tr>
+            </table>
+            <hr>
+        </section>
+
+        <section id="task4">
+            <h2 style="color: #990000;">Завдання 4: Форма з керуючими елементами</h2>
+            <form action="" method="POST">
+                <fieldset style="padding: 15px; border: 1px solid #ccc;">
+                    <legend style="font-weight: bold;">Введення інформації про студента</legend>
+                    <p>
+                        <label for="fullname">ПІБ студента:</label>
+                        <input type="text" name="fullname" size="30" id="fullname">
+                    </p>
+                    <p>
+                        <label for="group">Група:</label>
+                        <input type="text" name="group" size="20" value="КІУКІу-25-1" id="group">
+                    </p>
+                    <p>
+                        <input type="submit" value="Відправити дані" style="padding: 5px 10px;">
+                        <input type="reset" value="Очистити форму" style="padding: 5px 10px;">
+                    </p>
+                </fieldset>
+            </form>
+            <hr>
+        </section>
+
+        <section id="task5">
+            <h2 style="color: #993300;">Завдання 5: Посилання та зображення</h2>
+            <div style="text-align: center;">
+                <img src="cat.jpg" alt="Котик" width="300" style="margin-bottom: 15px;">
+                <p>
+                    Це головна сторінка ресурсу. Для перевірки роботи відносного гіперпосилання, ви можете 
+                    <a href="cats.html#funny_cats" style="color: #993300; font-weight: bold;">перейти до розділу "Серйозні котики" на іншій сторінці цього ресурсу</a>.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; margin-top: 20px;">
+        <hr>
+        <p style="color: #666666; font-size: 0.9em;">&copy; 2026. Лабораторна робота №1. Виконав студент: Арсеній Лучанінов.</p>
+    </footer>
+
+</body>
+</html>
